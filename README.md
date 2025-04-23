@@ -39,7 +39,7 @@ An online store for purchasing delightful children's books. Designed with a play
 
 ## 🔗 Live Demo
 
-[Check it out here]()
+[Check it out here](https://sivasankari-ramalingam.github.io/Little-Sprout/)
 
 ---
 
