@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        
+        .container-cart {
+            margin-top: 50px;
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+        .cart-item {
+            border-bottom: 1px solid #dee2e6;
+            padding: 10px 0;
+        }
+        .cart-item:last-child {
+            border-bottom: none;
+        }
+        .cart-total {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+    </style>
+    <link rel="stylesheet" href="product_style.css" />
+</head>
+<body>
+    <header class = "header-bg">
+        <nav class="navbar navbar-expand-sm" style = "background-color: #06D6A0;">
+            <div class = "container-fluid">
+            <a class = "navbar-brand" href = "#">
+              <img src = "images/template/images/Logo2.png" class = "d-inline-block align-text-top rounded-pill " alt = "Brand Logo" style="width:100px;">
+              </a>
+              <img src = "images/template/images/boy3.png" class = "d-inline-block" alt = "Boy with book" style="width:100px;">
+              <div class = "collapse navbar-collapse justify-content-center" id = "navbarNav">
+            <ul class = "navbar-nav">
+              <li class = "nav-item"> <a href="index.html">Home</a></li>
+              <li class = "nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id = "navbarDropdownMenuLink" role = "button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Books</a>
+                <div class="dropdown-menu" style = "background-color: #dc3545;" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="fairytale.html">Fairytale</a>
+                  <a class="dropdown-item" href="bedtime.html">Bedtime Stories</a>
+                  <a class="dropdown-item" href="novel.html">Novels</a>
+                </div>
+              
+              
+              </li>
+              
+              <li class = "nav-item"><a href="tracking.html">Track Your Order</a></li>
+              <li class = "nav-item"><a href="about.html">About</a></li>
+              <li class = "nav-item"><a href="contact.html">Contact</a><img src = "images/template/images/boy2.png" class = "d-inline-block" alt = "Boy with book" style="width:80px;"></li>
+              <li class = "nav-item"><a href="cart.html">Shopping Cart</a></li>
+            </ul>
+    
+            <!-- <img src = "images/template/images/boy2.png" class = "d-inline-block" alt = "Boy with book" style="width:100px;"> -->
+            <!-- <button class="btn btn-primary">Subscribe</button> -->
+            <!-- <a href="#" class="btn btn-outline-primary ms-auto">Login</a> -->
+            <!-- <a href="#" class="ms-auto">Login</a> -->
+        </div>
+    </div>
+      </nav>
+    
+    </header>
+
+    <main>
+    <div class="container-cart">
+        <h1 class="my-4 text-center">Checkout</h1>
+        <div class="card">
+            <div class="card-header">
+                <h2>Shopping Cart</h2>
+            </div>
+            <div class="card-body">
+                <div id="cart-items"></div>
+                <div class="cart-total text-right mt-4">
+                    Total: $<span id="cart-total">0.00</span>
+                </div>
+            </div>
+            <div class="card-footer text-right">
+                <button class="btn btn-danger" id="clear-cart">Clear Cart</button>
+                <button class="btn btn-success">Proceed to Payment</button>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <footer style="background-color: #06D6A0; color: white;">
+        <div class = "row">
+        <div class = "col-sm-3">
+        <img src = "images/template/images/Logo2.png" class = "d-inline-block rounded-pill " alt = "Brand Logo" style="width:65px;">
+        <span class = "h4">Little Sprout</span>
+    </div>
+    <img src = "images/template/images/girl2.png" class = "d-inline-block" alt = "Boy with book" style="width:100px;">
+    <div class="col-sm-4 text-center">
+        <h5>Subscribe to Our Newsletter</h5>
+        <form class="d-flex justify-content-center my-3">
+          <input type="email" class="form-control w-50 me-2" placeholder="Enter your email">
+          <button class="btn btn-primary">Subscribe</button>
+        </form>
+        </div>
+        <img src = "images/template/images/boy.png" class = "d-inline-block" alt = "Boy with book" style="width:100px;">
+            <div class = "col-sm-3 text-end">
+                <ul class = "list-unstyled d-flex justify-content-end mb-0">
+                    <li class = "ms-4"> <a href = "about.html"> About Us <a> </li>
+                        <li class = "ms-4"> <a href = "contact.html">Contact Us</a></li>
+                </ul>
+        <!-- <a href = "about.html"> About Us <a> -->
+        </div>
+    </div>
+        <div><small>&copy; 2024 Little Sprout Children's Books. All rights reserved. </small></div>
+    </footer>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="cart_new.js"></script>
+</body>
+</html>

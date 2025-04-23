@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Qwitcher+Grypen:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="product_style.css" />
+  </head>
+  <body>
+    <header class = "header-bg">
+      <nav class="navbar navbar-expand-sm" style = "background-color: #06D6A0;">
+          <div class = "container-fluid">
+          <a class = "navbar-brand" href = "#">
+            <img src = "images/template/images/Logo2.png" class = "d-inline-block align-text-top rounded-pill " alt = "Brand Logo" style="width:100px;">
+            </a>
+            <img src = "images/template/images/boy3.png" class = "d-inline-block" alt = "Boy with book" style="width:100px;">
+            <div class = "collapse navbar-collapse justify-content-center" id = "navbarNav">
+          <ul class = "navbar-nav">
+            <li class = "nav-item"> <a href="index.html">Home</a></li>
+            <li class = "nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id = "navbarDropdownMenuLink" role = "button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Books</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="fairytale.html">Fairytale</a>
+                <a class="dropdown-item" href="#">Bedtime Stories</a>
+                <a class="dropdown-item" href="#">Novels</a>
+              </div>
+            
+            
+            </li>
+            
+            <li class = "nav-item"><a href="tracking.html">Track Your Order</a></li>
+            <li class = "nav-item"><a href="about.html">About</a></li>
+            <li class = "nav-item"><a href="contact.html">Contact</a></li>
+          </ul>
+
+          <img src = "images/template/images/boy2.png" class = "d-inline-block" alt = "Boy with book" style="width:100px;">
+          <!-- <button class="btn btn-primary">Subscribe</button> -->
+          <!-- <a href="#" class="btn btn-outline-primary ms-auto">Login</a> -->
+          <a href="#" class="ms-auto">Login</a>
+      </div>
+  </div>
+    </nav>
+
+  </header>
+
+    <main>
+      <h1>Products</h1>
+<div class = "row">
+  <div class = "col-sm-2">
+      <div class="tab">
+        <button class="tablinks" onclick="openCategory(event, 'fairytale')">
+          Fairy Tale
+        </button>
+        <button class="tablinks" onclick="openCategory(event, 'bedtime')">
+          Bedtime Stories
+        </button>
+        <button class="tablinks" onclick="openCategory(event, 'novels')">
+          Novels
+        </button>
+        <button class="tablinks" onclick="openCategory(event, 'rhymes')">
+          Nursery Rhymes
+        </button>
+        <button class="tablinks" onclick="openCategory(event, 'history')">
+          History
+        </button>
+      </div>
+    </div>
+
+    
+
+  <div class = "col-sm-10">
+      <div id="fairytale" class="tabcontent">
+        
+        <div class="parent">
+
+          <div class="product">
+            <div class="product_image">
+              <img src="images/tm1.webp" alt="product1" />
+            </div>
+            <div class="description">
+              <h2>Charlotte's Web</h2>
+              <p> Paperback
+              </p>
+              <p><strong> $15.99</strong></p>
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal1">Know More</button>
+              <button type="button" class="btn btn-warning">Add to Cart</button>
+            </div>
+          </div>
+
+
+          <!--Modal-->
+          
+          <div class="modal fade" id="myModal1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+          
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Charlotte's Web</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+          
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <p>The novel follows Wilbur, the pig who, when he’s born, is the smallest of his litter. The farmer’s daughter, Fern, saves him and takes care of him until he’s too old to live with the family, and her parents become concerned that she’s spending too much time with animals and not enough time with her peers. He moves into a new home on a new farm and eventually learns a startling fate.</p>
+
+                  <p>He won’t be allowed to live out his days in peace, instead, he and the other farm animals need to find a way to prevent the Zuckerman family from slaughtering Wilbur at Christmas. They come up with a creative solution that changes the way the farmers see their animals. </p>
+
+                  <p>The novel is well-loved for its depiction of friendship, love, and the importance of helping those in need. Today, it’s read by children and adults around the world and has been the source of inspiration for television shows and films. </p>
+                </div>
+          
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+          
+              </div>
+            </div>
+          </div>
+          
+          <div class="product">
+            <div class="product_image">
+              <img src="images/fairytale/ft1.jpg" alt="product2" />
+            </div>
+            <div class="description">
+              <h2>The Wishing Spell</h2>
+              <p> Paperback
+              </p>
+              <p><strong> $11.99</strong></p>
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal2">Know More</button>
+              <button type="button" class="btn btn-warning">Add to Cart</button>
+            </div>
+          </div>
+
+
+          <!--Modal-->
+          
+          <div class="modal fade" id="myModal2">
+            <div class="modal-dialog">
+              <div class="modal-content">
+          
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">The Wishing Spell</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+          
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                 <p> <strong> The first book in Chris Colfer’s #1 New York Times bestselling series The Land of Stories about two siblings who fall into a fairy-tale world! </strong> </p>
+                  <p>Alex and Conner Bailey’s world is about to change, in this fast-paced adventure that uniquely combines our modern day world with the enchanting realm of classic fairy tales.</p>
+
+                  <p>The Land of Stories tells the tale of twins Alex and Conner. Through the mysterious powers of a cherished book of stories, they leave their world behind and find themselves in a foreign land full of wonder and magic where they come face-to-face with fairy tale characters they grew up reading about. </p>
+
+                  <p>But after a series of encounters with witches, wolves, goblins, and trolls alike, getting back home is going to be harder than they thought. </p>
+                </div>
+          
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+          
+              </div>
+            </div>
+          </div>
+
+
+          <div class="product">
+            <div class="product_image">
+              <img src="images/fairytale/ft2.jpg" alt="product3" />
+            </div>
+            <div class="description">
+              <h2>Shadow and Bone</h2>
+              <p> Paperback
+              </p>
+              <p><strong> $8.79</strong></p>
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal3">Know More</button>
+              <button type="button" class="btn btn-warning">Add to Cart</button>
+            </div>
+          </div>
+
+
+          <!--Modal-->
+          
+          <div class="modal fade" id="myModal3">
+            <div class="modal-dialog">
+              <div class="modal-content">
+          
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Shadow and Bone</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+          
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <p><strong> Discover the adventure that started it all and meet Alina, Mal, and the Darkling in Shadow and Bone from #1 bestselling author, Leigh Bardugo. </strong> </p>
+                  <p>Soldier. Summoner. Saint. Orphaned and expendable, Alina Starkov is a soldier who knows she may not survive her first trek across the Shadow Fold–a swath of unnatural darkness crawling with monsters. But when her regiment is attacked, Alina unleashes dormant magic not even she knew she possessed.</p>
+
+                  <p>Now Alina will enter a lavish world of royalty and intrigue as she trains with the Grisha, her country’s magical military elite–and falls under the spell of their notorious leader, the Darkling. He believes Alina can summon a force capable of destroying the Shadow Fold and reuniting their war-ravaged country, but only if she can master her untamed gift. </p>
+
+                  <p>As the threat to the kingdom mounts and Alina unlocks the secrets of her past, she will make a dangerous discovery that could threaten all she loves and the very future of a nation.. </p>
+                </div>
+          
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+          
+              </div>
+            </div>
+          </div>
+
+
+
+          
+
+
+          
+
+          
+
+
+          
+
+
+          
+       
+       
+       
+        </div> 
+      </div>
+  </div>
+
+
+
+<!--Bedtime stories tab-->
+<div class = "col-sm-10">
+  <div id="bedtime" class="tabcontent">
+    
+    <div class="parent">
+
+      <div class="product">
+        <div class="product_image">
+          <img src="images/tm1.webp" alt="product1" />
+        </div>
+        <div class="description">
+          <h2>Charlotte's Web</h2>
+          <p> Paperback
+          </p>
+          <p><strong> $15.99</strong></p>
+          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal1">Know More</button>
+          <button type="button" class="btn btn-warning">Add to Cart</button>
+        </div>
+      </div>
+
+
+      <!--Modal-->
+      
+      <div class="modal fade" id="myModal1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Charlotte's Web</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body">
+              <p>The novel follows Wilbur, the pig who, when he’s born, is the smallest of his litter. The farmer’s daughter, Fern, saves him and takes care of him until he’s too old to live with the family, and her parents become concerned that she’s spending too much time with animals and not enough time with her peers. He moves into a new home on a new farm and eventually learns a startling fate.</p>
+
+              <p>He won’t be allowed to live out his days in peace, instead, he and the other farm animals need to find a way to prevent the Zuckerman family from slaughtering Wilbur at Christmas. They come up with a creative solution that changes the way the farmers see their animals. </p>
+
+              <p>The novel is well-loved for its depiction of friendship, love, and the importance of helping those in need. Today, it’s read by children and adults around the world and has been the source of inspiration for television shows and films. </p>
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div> </div> </div>
+
+
+      <div id="novels" class="tabcontent">
+        <h3> Novels </h3>
+      </div>
+      <div id="rhymes" class="tabcontent">
+        <h3> Rhymes </h3>
+      </div>
+      <div id="history" class="tabcontent">
+        <h3> History </h3>
+
+      </div>
+    </div>
+      </div> 
+
+
+
+
+
+    </main>
+<footer style="background-color: #06D6A0; color: white;">
+        <div class = "row">
+        <div class = "col-sm-3">
+        <img src = "images/template/images/Logo2.png" class = "d-inline-block rounded-pill " alt = "Brand Logo" style="width:65px;">
+        <span class = "h4">Little Sprout</span>
+    </div>
+    <img src = "images/template/images/girl2.png" class = "d-inline-block" alt = "Boy with book" style="width:100px;">
+    <div class="col-sm-4 text-center">
+        <h5>Subscribe to Our Newsletter</h5>
+        <form class="d-flex justify-content-center my-3">
+          <input type="email" class="form-control w-50 me-2" placeholder="Enter your email">
+          <button class="btn btn-primary">Subscribe</button>
+        </form>
+        </div>
+        <img src = "images/template/images/boy.png" class = "d-inline-block" alt = "Boy with book" style="width:100px;">
+            <div class = "col-sm-3 text-end">
+                <ul class = "list-unstyled d-flex justify-content-end mb-0">
+                    <li class = "ms-4"> <a href = "about.html"> About Us <a> </li>
+                        <li class = "ms-4"> <a href = "contact.html">Contact Us</a></li>
+                </ul>
+        <!-- <a href = "about.html"> About Us <a> -->
+        </div>
+    </div>
+        <div><small>&copy; 2024 Little Sprout Children's Books. All rights reserved. </small></div>
+    </footer>
+
+    <script src = "script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

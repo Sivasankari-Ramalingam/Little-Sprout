@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bedtime Stories Books</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Qwitcher+Grypen:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="product_style.css" />
+  </head>
+  <body>
+    <header class = "header-bg">
+      <nav class="navbar navbar-expand-sm" style = "background-color: #06D6A0;">
+          <div class = "container-fluid">
+          <a class = "navbar-brand" href = "#">
+            <img src = "images/template/images/Logo2.png" class = "d-inline-block align-text-top rounded-pill " alt = "Brand Logo" style="width:100px;">
+            </a>
+            <img src = "images/template/images/boy3.png" class = "d-inline-block" alt = "Boy with book" style="width:100px;">
+            <div class = "collapse navbar-collapse justify-content-center" id = "navbarNav">
+          <ul class = "navbar-nav">
+            <li class = "nav-item"> <a href="index.html">Home</a></li>
+            <li class = "nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id = "navbarDropdownMenuLink" role = "button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Books</a>
+              <div class="dropdown-menu" style = "background-color: #dc3545;" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="fairytale.html">Fairytale</a>
+                <a class="dropdown-item" href="bedtime.html">Bedtime Stories</a>
+                <a class="dropdown-item" href="novel.html">Novels</a>
+              </div>
+            
+            
+            </li>
+            
+            <li class = "nav-item"><a href="tracking.html">Track Your Order</a></li>
+            <li class = "nav-item"><a href="about.html">About</a></li>
+            <li class = "nav-item"><a href="contact.html">Contact</a><img src = "images/template/images/boy2.png" class = "d-inline-block" alt = "Boy with book" style="width:80px;"></li>
+            <li class = "nav-item"><a href="cart.html">Shopping Cart</a></li>
+          </ul>
+
+          <!-- <img src = "images/template/images/boy2.png" class = "d-inline-block" alt = "Boy with book" style="width:100px;"> -->
+          <!-- <button class="btn btn-primary">Subscribe</button> -->
+          <!-- <a href="#" class="btn btn-outline-primary ms-auto">Login</a> -->
+          <!-- <a href="#" class="ms-auto">Login</a> -->
+      </div>
+  </div>
+    </nav>
+
+  </header>
+
+  <main>
+
+    <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel" data-interval = "1000">
+
+<!-- Indicators/dots -->
+<div class="carousel-indicators">
+  <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+  <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+  <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+</div>
+
+<!-- The slideshow/carousel -->
+<div class="carousel-inner">
+  <div class="carousel-item active animate__animated animate__fadeInRight">
+    <img src="images/bedtime/Carousel/img1.jpeg" alt="img1" class="d-block w-100">
+  </div>
+  <div class="carousel-item animate__animated animate__fadeInRight">
+    <img src="images/bedtime/Carousel/img2.jpeg" alt="img2" class="d-block w-100">
+  </div>
+  <div class="carousel-item animate__animated animate__fadeInRight">
+    <img src="images/bedtime/Carousel/img3.jpeg" alt="img3" class="d-block w-100">
+  </div>
+  <div class="carousel-item animate__animated animate__fadeInRight">
+    <img src="images/bedtime/Carousel/img4.jpeg" alt="img4" class="d-block w-100">
+  </div>
+</div>
+
+<!-- Left and right controls/icons -->
+<button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon"></span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+  <span class="carousel-control-next-icon"></span>
+</button>
+</div>
+
+
+<!--Search button-->
+<div class="container">
+  <div class="row  mx-auto" style = "position:sticky; top:0;">
+      <div class="col-md-12">
+          <form id="searchForm" class="form-inline my-2 my-lg-0">
+            <div class = "form-group">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search for books" aria-label="Search" id="searchInput">
+            </div>
+            <div class = "form-group">
+              <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+            </div>
+              <div class = "form-group float-end">
+              <button class="btn btn-primary my-2 my-sm-0" type="button" id = "back">Back</button>
+            </div>
+          </form>
+      </div>
+  </div>
+  
+
+<!-- <div class = "col-sm-10"> -->
+    <div id="fairytale">
+      
+      <div class="parent">
+
+        <div class="product">
+          <div class="product_image">
+            <img src="images/bedtime/bd1.jpg" alt="product1" />
+          </div>
+          <div class="description">
+            <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal1"><h2 class = "book-title">Goodnight Moon</h2></a>
+            <p> Board Books
+            </p>
+            <p>$<span class="product-price">8.79</span></p>
+            <!-- <p><strong> $8.79</strong></p> -->
+            <!-- <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal1">Know More</button> -->
+            <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+
+        <!--Modal-->
+        
+        <div class="modal fade" id="myModal1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Goodnight Moon</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p> <strong>In this classic of children’s literature, beloved by generations of readers and listeners, the quiet poetry of the words and the gentle, lulling illustrations combine to make a perfect book for the end of the day.</strong></p>
+
+                <p>In a great green room, tucked away in bed, is a little bunny. “Goodnight room, goodnight moon.” And to all the familiar things in the softly lit room–to the picture of the three little bears sitting on chairs, to the clocks and his socks, to the mittens and the kittens, to everything one by one–the little bunny says goodnight. </p>
+
+                <p>One of the most beloved books of all time, Goodnight Moon is a must for every bookshelf. This board book edition is the right size for little hands and is the perfect gift for baby showers, toddler birthday parties, and holidays. </p>
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+        
+        <div class="product">
+          <div class="product_image">
+            <img src="images/bedtime/bd2.jpg" alt="product2" />
+          </div>
+          <div class="description">
+            <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal2"><h2 class = "book-title">Where the Wild Things Are</h2></a>
+            <p> Hardcover
+            </p>
+            <!-- <p><strong> $17.59</strong></p> -->
+            <p>$<span class="product-price">17.59</span></p>
+            <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+
+        <!--Modal-->
+        
+        <div class="modal fade" id="myModal2">
+          <div class="modal-dialog">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Where the Wild Things Are</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+
+               <p> <strong> Maurice Sendak’s Caldecott Medal-winning picture book has become one of the most highly acclaimed and best-loved children’s books of all time. A must for every child’s bookshelf. </strong> </p>
+                <p>This iconic story has inspired a movie, an opera, and the imagination of generations. When Max dresses in his wolf suit and causes havoc in the house, his mother sends him to bed. From there, Max sets sail to an island inhabited by the Wild Things, who name him king and share a wild rumpus with him. But then from far away across the world, Max smells good things to eat…</p>
+
+                <p>Let the wild rumpus continue as this classic comes to life like never before with new reproductions of Maurice Sendak’s artwork. Astonishing state-of-the-art technology faithfully captures the color and detail of the original illustrations. Sendak himself enthusiastically endorsed this impressive new interpretation of his art. </p>
+
+                <p>Mary Pols of Time magazine wrote that “what makes Sendak’s book so compelling is its grounding effect: Max has a tantrum and in a flight of fancy visits his wild side, but he is pulled back by a belief in parental love to a supper ‘still hot.” Generations have shared this beautiful picture book, and children of all ages will want to return to it again and again. </p>
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+
+
+        <div class="product">
+          <div class="product_image">
+            <img src="images/bedtime/bd3.jpg" alt="product3" />
+          </div>
+          <div class="description">
+            <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal3"><h2 class = "book-title">The Going to Bed Book</h2></a>
+            <p> Board Books
+            </p>
+            <!-- <p><strong> $5.59</strong></p> -->
+            <p>$<span class="product-price">5.59</span></p>
+            <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+
+        <!--Modal-->
+        
+        <div class="modal fade" id="myModal3">
+          <div class="modal-dialog">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">The Going to Bed Book</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p><strong> Getting ready for sleep is tons of fun in this iconic board book from author and illustrator Sandra Boynton. </strong> </p>
+                <p>This classic bedtime story is just right for winding down the day as a joyful, silly group of animals scrub scrub scrub in the tub, brush and brush and brush their teeth, and finally rock and rock and rock to sleep.</p>
+
+                <p> <i>The day is done.</i> </p>
+                <p> <i>  They say good night, </i> </p>
+                  <p> <i> and somebody </i> </p>
+                    <p> <i> turns off the light.</i> </p>
+
+                
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+
+
+        <div class="product">
+          <div class="product_image">
+            <img src="images/bedtime/bd4.jpg" alt="product4" />
+          </div>
+          <div class="description">
+            <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal4"><h2 class = "book-title">It’s Time to Sleep, My Love</h2></a>
+            <p> Board Books
+            </p>
+            <!-- <p><strong> $6.39</strong></p> -->
+            <p>$<span class="product-price">6.39</span></p>
+            <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+
+        <!--Modal-->
+        
+        <div class="modal fade" id="myModal4">
+          <div class="modal-dialog">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">It’s Time to Sleep, My Love</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p><strong>As comforting as a soft blanket and warm as a goodnight hug, Eric Metaxas’s lullaby It’s Time to Sleep, My Love is delightfully brought to life by bestselling artist Nancy Tillman (On the Night You Were Born), whose illustrations celebrate the wonders of the natural world, and the bonds of family. </strong></p>
+                <p>As children prepare for bed, the world around them is also settling down for the night. Animals who live in the jungle, the forest, the sea–all whisper to their babies a soft refrain: It’s time to sleep, my love.</p>
+
+                <p> <i>It’s time to sleep, it’s time to sleep,</i> </p>
+                <p> <i>  the fishes croon in waters deep.</i> </p>
+                  <p> <i> The songbirds sing in trees above, </i> </p>
+                    <p> <i> “It’s time to sleep, my love, my love.”</i> </p>
+
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="product">
+          <div class="product_image">
+            <img src="images/bedtime/bd5.jpg" alt="product5" />
+          </div>
+          <div class="description">
+            <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal5"><h2 class = "book-title">10 Minutes Till Bedtime</h2></a>
+            <p> Paperback
+            </p>
+            <!-- <p><strong> $7.99</strong></p> -->
+            <p>$<span class="product-price">7.99</span></p>
+            <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+
+        <!--Modal-->
+        
+        <div class="modal fade" id="myModal5">
+          <div class="modal-dialog">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">10 Minutes Till Bedtime</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p><strong>A sure-fire toddler pleaser from the creator of Good Night, Gorilla. </strong></p>
+                <p>It’s almost bedtime! At 1 Hoppin Place the fun begins when a family of hamsters arrives at the door. There are only ten minutes left, and there’s still so much to do! But with the help of the Hamsters’ 10-Minute Bedtime Tour (guided by his own pet hamster), the little boy is able to get his toys put away, his pajamas on, his teeth brushed, and his bedtime story read-all in the nick of time. </p>
+
+                <p>This lively introduction to bedtime rituals and the concept of counting backwards will have young readers eagerly awaiting their own countdown to bedtime.</p>
+
+                
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="product_image">
+            <img src="images/bedtime/bd6.jpg" alt="product6" />
+            
+          </div>
+          <div class="description">
+            <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal6"><h2 class = "book-title">On the Night You Were Born</h2></a>
+            <p> Board Books
+            </p>
+            <!-- <p><strong> $6.39</strong></p> -->
+            <p>$<span class="product-price">6.39</span></p>
+            <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+
+        <!--Modal-->
+        
+        <div class="modal fade" id="myModal6">
+          <div class="modal-dialog">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">On the Night You Were Born</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p><strong>On the Night You Were Born has touched the lives of more than 8 million people, from newborns and toddlers to parents and grandparents. A New York Times bestseller, On the Night You Were Born is sure to be a beloved addition to family libraries.</strong></p>
+                <p>Heaven blew every trumpet and played every horn on the wonderful, marvelous night you were born. On the night you were born, the whole world came alive with thanksgiving. The moon stayed up till morning. The geese flew home to celebrate. Polar bears danced.</p>
+
+                
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="product">
+          <div class="product_image">
+            <img src="images/bedtime/bd7.jpg" alt="product7" />
+            
+          </div>
+          <div class="description">
+            <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal7"><h2 class = "book-title">You Are My Happy</h2></a>
+            <p> Hardcover
+            </p>
+            <!-- <p><strong> $15.19</strong></p> -->
+            <p>$<span class="product-price">15.19</span></p>
+            <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+
+        <!--Modal-->
+        
+        <div class="modal fade" id="myModal7">
+          <div class="modal-dialog">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">You Are My Happy</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p><strong>From Hoda Kotb, the Today show co-anchor and the #1 New York Times bestselling author of I’ve Loved You Since Forever, comes a bedtime snuggling book about gratitude for the things in life–both big and small–that bring us happiness. </strong></p>
+                <p>As mama bear and her cub cuddle together before closing their eyes for a good night’s sleep, they reflect on the everyday wonders of life that make them happy.</p>
+
+                <p>Inspired by her own nighttime routine with her daughter, Haley Joy, Kotb creates another beautiful treasure for parents and children to enjoy together. With charming and lush illustrations from bestselling artist Suzie Mason, this soothing yet playful lullaby explores the simple joy of taking a moment to be grateful.</p>
+
+                
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>  
+
+
+
+        <div class="product">
+          <div class="product_image">
+            <img src="images/bedtime/bd8.jpg" alt="product8" />
+            
+          </div>
+          <div class="description">
+            <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal8"><h2 class = "book-title">My Parents Think I’m Sleeping</h2></a>
+            <p> Paperback
+            </p>
+            <!-- <p><strong> $4.79</strong></p> -->
+            <p>$<span class="product-price">4.79</span></p>
+            <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+
+        <!--Modal-->
+        
+        <div class="modal fade" id="myModal8">
+          <div class="modal-dialog">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">My Parents Think I’m Sleeping</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p><strong>From Children’s Poet Laureate Jack Prelutsky and illustrator Yossi Abolafia, My Parents Think I’m Sleeping is the perfect book to get young readers excited about bedtime. </strong></p>
+                <p>This Level 3 I Can Read book is a funny collection of poems about a boy who should be sleeping, but manages to find more than just storybooks and his model rocket kit to keep him awake.</p>
+
+                <p>From reading under the covers to watching shadows dance on the wall, these fourteen funny and spooky nighttime poems show that a child’s life begins at bedtime!</p>
+
+                
+
+                
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>  
+        
+
+        <div class="product">
+          <div class="product_image">
+            <img src="images/bedtime/bd9.jpg" alt="product9" />
+            
+          </div>
+          <div class="description">
+            <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal9"><h2 class = "book-title">What the Moon Is Like</h2></a>
+            <p> Paperback
+            </p>
+            <!-- <p><strong> $7.19</strong></p> -->
+            <p>$<span class="product-price">7.19</span></p>
+            <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+
+        <!--Modal-->
+        
+        <div class="modal fade" id="myModal9">
+          <div class="modal-dialog">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">What the Moon Is Like</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p><strong>Colder than the desert, the hotter than the desert, the moon is an amazing place to explore. </strong></p>
+                <p>Imagine that you’re walking on the moon. What is it like? For thousands of years people looked up at the moon and wondered about it. Now we know what the moon is like. There is no air on the moon and nothing grows, but there are towering mountains and deep craters–and much more.</p>
+
+                <p>This is a clear and appealing science book for early elementary age kids, both at home and in the classroom. It’s a Level 2 Let’s-Read-and-Find-Out, which means the book explores more challenging concepts for children in the primary grades.</p>
+
+                                  
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>  
+        
+     
+        <div class="product">
+          <div class="product_image">
+            <img src="images/bedtime/bd10.jpg" alt="product10" />
+            
+          </div>
+          <div class="description">
+            <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal10"><h2 class = "book-title">Creepy Pair of Underwear!</h2></a>
+            <p> Hardcover
+            </p>
+            <!-- <p><strong> $15.19</strong></p> -->
+            <p>$<span class="product-price">15.19</span></p>
+            <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+
+        <!--Modal-->
+        
+        <div class="modal fade" id="myModal10">
+          <div class="modal-dialog">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Creepy Pair of Underwear!</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p><strong>From the celebrated team behind Creepy Carrots!, Aaron Reynolds and Caldecott Honor winner Peter Brown, comes a hilarious (and just a little creepy) story of a brave rabbit and a very weird pair of underwear. </strong></p>
+                <p>Jasper Rabbit is NOT a little bunny anymore. He’s not afraid of the dark, and he’s definitely not afraid of something as silly as underwear. But when the lights go out, suddenly his new big rabbit underwear glows in the dark. A ghoulish, greenish glow. </p>
+
+                <p>If Jasper didn’t know any better he’d say his undies were a little, well, creepy. Jasper’s not scared obviously, he’s just done with creepy underwear. But after trying everything to get rid of them, they keep coming back!</p>
+
+                                  
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>  
+
+
+        <div class="product">
+          <div class="product_image">
+            <img src="images/bedtime/bd11.jpg" alt="product11" />
+            
+          </div>
+          <div class="description">
+            <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal11"><h2 class = "book-title">Time for Bed</h2></a>
+            <p> Hardcover
+            </p>
+            <!-- <p><strong> $15.99</strong></p> -->
+            <p>$<span class="product-price">15.99</span></p>
+            <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+
+        <!--Modal-->
+        
+        <div class="modal fade" id="myModal11">
+          <div class="modal-dialog">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Time for Bed</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p><strong>Celebrating 30 years of this essential bedtime book for babies and toddlers, this beautiful book is destined to lull wakeful little ones to sleep.</strong></p>
+                <p>An essential bedtime book for babies and toddlers. Soft, cozy illustrations of sleepy baby animals and their soothing parents are accompanied by rhyme destined to lull wakeful little ones to sleep. </p>
+
+                <p>Darkness is falling everywhere and little ones are getting sleepy, feeling cozy, and being tucked in. Every creature, from mice to sheep, kittens to fish, and especially children will love to snuggle under the covers for this comforting nighttime read!</p>
+
+                
+
+                                  
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>  
+
+
+
+        <div class="product">
+          <div class="product_image">
+            <img src="images/bedtime/bd12.jpg" alt="product12" />
+            
+          </div>
+          <div class="description">
+            <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal12"><h2 class = "book-title">Fox at Night</h2></a>
+            <p> Paperback
+            </p>
+            <!-- <p><strong> $4.79</strong></p> -->
+            <p>$<span class="product-price">4.79</span></p>
+            <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+
+        <!--Modal-->
+        
+        <div class="modal fade" id="myModal12">
+          <div class="modal-dialog">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Fox at Night</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p><strong>Geisel Award winner and ALA Notable Book of the Year! In his next I Can Read adventure, Fox–the hilarious trickster character featured in Geisel Award-winning Fox the Tiger–overcomes his fear of monsters when he meets real nocturnal animals.</strong></p>
+                <p>Fox is up late in the night. There are shadows and noises everywhere. Fox is sure the night is full of monsters! Then he meets the real creatures of the night and realizes they are not so scary after all. </p>
+
+                <p>Carefully crafted using basic language, word repetition, sight words, and whimsical illustrations, Fox at Night is ideal for sharing with your emergent reader. The active, engaging My First I Can Read stories have appealing plots and lovable characters, encouraging children to continue their reading journey.</p>
+
+                
+
+                                  
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>  
+
+
+        <div class="product">
+          <div class="product_image">
+            <img src="images/bedtime/bd13.jpg" alt="product13" />
+            
+          </div>
+          <div class="description">
+            <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal13"><h2 class = "book-title">
+              The Golden Girls: Goodnight, Girls</h2></a>
+            <p> Board Books
+            </p>
+            <!-- <p><strong> $7.19</strong></p> -->
+            <p>$<span class="product-price">7.19</span></p>
+            <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+
+        <!--Modal-->
+        
+        <div class="modal fade" id="myModal13">
+          <div class="modal-dialog">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">
+                  The Golden Girls: Goodnight, Girls</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p><strong>Celebrate your love of the iconic 1980s sitcom with this charming board book that fans will want to share with the youngest readers at bedtime.</strong></p>
+                <p>Dorothy, Blanche, and Rose are having a sleepover! And, of course, they are having too much fun to go to sleep. As Ma tries to get them to settle down, the girls enjoy some cheesecake in the kitchen, try on their dress-up clothes, sing and dance, and say goodnight to their friends Stan and Miles. Finally, after taking a bath and putting on their pj’s, they all squeeze into bed and listen to one of Ma’s Sicily stories before they drift off together. </p>
+
+                
+
+                                  
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>  
+
+
+        <div class="product">
+          <div class="product_image">
+            <img src="images/bedtime/bd14.jpg" alt="product14" />
+            
+          </div>
+          <div class="description">
+            <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal14"><h2 class = "book-title">Kitten’s First Full Moon Board Book</h2></a>
+            <p> Hardcover
+            </p>
+            <!-- <p><strong> $7.99</strong></p> -->
+            <p>$<span class="product-price">7.99</span></p>
+            <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+
+        <!--Modal-->
+        
+        <div class="modal fade" id="myModal14">
+          <div class="modal-dialog">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Kitten’s First Full Moon Board Book</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p><strong>Kevin Henkes’s acclaimed national bestseller about a kitten, the moon, and a bowl of milk was awarded the Caldecott Medal and was a New York Times Best Illustrated Book. This sturdy board book edition is perfect for little hands!</strong></p>
+                <p>Kitten’s First Full Moon is an acclaimed modern classic, from one of the most celebrated and beloved picture book creators working in the field today. This memorable character and her suspenseful adventure are just right for the very youngest child.  </p>
+
+                <p>It is Kitten’s first full moon, and when she sees it she thinks it is a bowl of milk in the sky. And she wants it. Does she get it? Well, no . . . and yes. What a night!</p>
+
+                
+
+                                  
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>  
+
+
+        <div class="product">
+          <div class="product_image">
+            <img src="images/bedtime/bd15.jpg" alt="product15" />
+            
+          </div>
+          <div class="description">
+            <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal15"><h2 class = "book-title">Good Day, Good Night</h2></a>
+            <p> Board Books
+            </p>
+            <!-- <p><strong> $7.99</strong></p> -->
+            <p>$<span class="product-price">7.99</span></p>
+            <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+
+        <!--Modal-->
+        
+        <div class="modal fade" id="myModal15">
+          <div class="modal-dialog">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Good Day, Good Night</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p><strong>When the sun comes up and the day begins, the little bunny says good day to all the familiar things outside.</strong></p>
+                <p>To the birds in the skies and the bees in their hives, to everything one by one. And as the sun starts to set, it’s time for the little bunny to say goodnight. Goodnight, kitty. Goodnight, bear. Goodnight, people everywhere.</p>
+
+                <p>Makes an excellent baby shower, birthday, and holiday gift!</p>
+
+                
+
+                                  
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>  
+
+
+        <div class="product">
+          <div class="product_image">
+            <img src="images/bedtime/bd16.jpg" alt="product16" />
+            
+          </div>
+          <div class="description">
+            <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal16"><h2 class = "book-title">Good Night, Gorilla</h2></a>
+            <p> Board Books
+            </p>
+            <!-- <p><strong> $7.19</strong></p> -->
+            <p>$<span class="product-price">7.19</span></p>
+            <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+
+        <!--Modal-->
+        
+        <div class="modal fade" id="myModal16">
+          <div class="modal-dialog">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Good Night, Gorilla</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p><strong>Good night, Gorilla.
+                  Good night, Elephant.</strong></p>
+                <p>It’s bedtime at the zoo, and all the animals are going to sleep. Or are they? Who’s that short, furry guy with the key in his hand and the mischievous grin? </p>
+
+                <p>
+                  Sneak along behind the zookeeper’s back, and see who gets the last laugh in this riotous good-night romp.
+                </p>
+
+                                  
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>  
+
+
+        <div class="product">
+          <div class="product_image">
+            <img src="images/bedtime/bd17.jpg" alt="product17" />
+            
+          </div>
+          <div class="description">
+            <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal17"><h2 class = "book-title">The Wonderful Things You Will Be</h2></a>
+            <p> Hardcover
+            </p>
+            <!-- <p><strong> $14.39</strong></p> -->
+            <p>$<span class="product-price">14.39</span></p>
+            <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+
+        <!--Modal-->
+        
+        <div class="modal fade" id="myModal17">
+          <div class="modal-dialog">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">The Wonderful Things You Will Be</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p><strong>The New York Times bestseller that celebrates the dreams, acceptance, and love that parents have for their children . . . now and forever. </strong></p>
+                <p>From brave and bold to creative and clever, Emily Winfield Martin’s rhythmic rhyme expresses all the loving things that parents think of when they look at their children. With beautiful, lush illustrations and a stunning gatefold that opens at the end, this is a book that families will love reading over and over.</p>
+
+                <p>The Wonderful Things You Will Be has a loving and truthful message that will endure for lifetimes and makes a great gift to the ones you love for any occasion.</p>
+
+                
+                                  
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>  
+
+
+        <div class="product">
+          <div class="product_image">
+            <img src="images/bedtime/bd18.jpg" alt="product18" />
+            
+          </div>
+          <div class="description">
+            <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal18"><h2 class = "book-title">I Am a Big Brother</h2></a>
+            <p> Paperback
+            </p>
+            <!-- <p><strong> $5.59</strong></p> -->
+            <p>$<span class="product-price">5.59</span></p>
+            <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+
+        <!--Modal-->
+        
+        <div class="modal fade" id="myModal18">
+          <div class="modal-dialog">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">I Am a Big Brother</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p><strong>Share the joys of becoming a big brother!</strong></p>
+                <p>With the arrival of a new baby comes many transitions, and big brothers may need a little extra tender loving care to adjust to a new family situation. </p>
+
+                <p>This sweet story with adorable toddler illustrations by Caroline Jayne Church is just right to share with and prepare an older brother getting ready for an expanding family.</p>
+
+                
+
+                                  
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>  
+
+
+
+     
+      </div> 
+    </div>
+</div>
+
+
+
+
+
+
+
+  
+
+   
+
+
+
+
+
+  </main>
+<footer style="background-color: #06D6A0; color: white;">
+        <div class = "row">
+        <div class = "col-sm-3">
+        <img src = "images/template/images/Logo2.png" class = "d-inline-block rounded-pill " alt = "Brand Logo" style="width:65px;">
+        <span class = "h4">Little Sprout</span>
+    </div>
+    <img src = "images/template/images/girl2.png" class = "d-inline-block" alt = "Boy with book" style="width:100px;">
+    <div class="col-sm-4 text-center">
+        <h5>Subscribe to Our Newsletter</h5>
+        <form class="d-flex justify-content-center my-3">
+          <input type="email" class="form-control w-50 me-2" placeholder="Enter your email">
+          <button class="btn btn-primary">Subscribe</button>
+        </form>
+        </div>
+        <img src = "images/template/images/boy.png" class = "d-inline-block" alt = "Boy with book" style="width:100px;">
+            <div class = "col-sm-3 text-end">
+                <ul class = "list-unstyled d-flex justify-content-end mb-0">
+                    <li class = "ms-4"> <a href = "about.html"> About Us <a> </li>
+                        <li class = "ms-4"> <a href = "contact.html">Contact Us</a></li>
+                </ul>
+        <!-- <a href = "about.html"> About Us <a> -->
+        </div>
+    </div>
+        <div><small>&copy; 2024 Little Sprout Children's Books. All rights reserved. </small></div>
+    </footer>
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src = "cart_new.js"></script>
+  </body>
+</html>

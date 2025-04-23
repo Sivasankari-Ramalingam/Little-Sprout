@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Qwitcher+Grypen:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="product_style.css" />
+    <!-- <style>
+      .carousel-item {
+        transition: transform 2s ease, opacity 2s ease;
+      }
+      .carousel-item-next,
+      .carousel-item-prev,
+      .carousel-item.active {
+        display: block;
+        opacity: 0;
+      }
+      .carousel-item-next.carousel-item-left,
+      .carousel-item-prev.carousel-item-right,
+      .carousel-item.active.carousel-item-right,
+      .carousel-item.active.carousel-item-left {
+        opacity: 1;
+      }
+    </style> -->
+  </head>
+  <body>
+    <header class = "header-bg">
+      <nav class="navbar navbar-expand-sm" style = "background-color: #06D6A0;">
+          <div class = "container-fluid">
+          <a class = "navbar-brand" href = "#">
+            <img src = "images/template/images/Logo2.png" class = "d-inline-block align-text-top rounded-pill " alt = "Brand Logo" style="width:100px;">
+            </a>
+            <img src = "images/template/images/boy3.png" class = "d-inline-block" alt = "Boy with book" style="width:100px;">
+            <div class = "collapse navbar-collapse justify-content-center" id = "navbarNav">
+          <ul class = "navbar-nav">
+            <li class = "nav-item"> <a href="index.html">Home</a></li>
+            <li class = "nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id = "navbarDropdownMenuLink" role = "button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Books</a>
+              <div class="dropdown-menu" style = "background-color: #dc3545;" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="fairytale.html">Fairytale</a>
+                <a class="dropdown-item" href="bedtime.html">Bedtime Stories</a>
+                <a class="dropdown-item" href="novel.html">Novels</a>
+              </div>
+            
+            
+            </li>
+            
+            <li class = "nav-item"><a href="tracking.html">Track Your Order</a></li>
+            <li class = "nav-item"><a href="about.html">About</a></li>
+            <li class = "nav-item"><a href="contact.html">Contact</a><img src = "images/template/images/boy2.png" class = "d-inline-block" alt = "Boy with book" style="width:80px;"></li>
+            <li class = "nav-item"><a href="cart.html">Shopping Cart</a></li>
+          </ul>
+
+          <!-- <img src = "images/template/images/boy2.png" class = "d-inline-block" alt = "Boy with book" style="width:100px;"> -->
+          <!-- <button class="btn btn-primary">Subscribe</button> -->
+          <!-- <a href="#" class="btn btn-outline-primary ms-auto">Login</a> -->
+          <!-- <a href="#" class="ms-auto">Login</a> -->
+      </div>
+  </div>
+    </nav>
+
+  </header>
+
+    <main>
+
+      <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel" data-interval = "1000">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+  </div>
+
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active animate__animated animate__fadeInRight">
+      <img src="images/fairytale/Carousel/img1.jpeg" alt="img1" class="d-block w-100">
+    </div>
+    <div class="carousel-item animate__animated animate__fadeInRight">
+      <img src="images/fairytale/Carousel/img2.jpeg" alt="img2" class="d-block w-100">
+    </div>
+    <div class="carousel-item animate__animated animate__fadeInRight">
+      <img src="images/fairytale/Carousel/img3.jpeg" alt="img3" class="d-block w-100">
+    </div>
+    <div class="carousel-item animate__animated animate__fadeInRight">
+      <img src="images/fairytale/Carousel/img4.jpeg" alt="img4" class="d-block w-100">
+    </div>
+  </div>
+
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+    <!--Search button-->
+    <div class="container">
+      <div class="row  mx-auto" style = "position:sticky; top:0;">
+          <div class="col-md-12">
+              <form id="searchForm" class="form-inline my-2 my-lg-0">
+                <div class = "form-group">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search for books" aria-label="Search" id="searchInput">
+                </div>
+                <div class = "form-group">
+                  <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+                </div>
+                  <div class = "form-group float-end">
+                  <button class="btn btn-primary my-2 my-sm-0" type="button" id = "back">Back</button>
+                </div>
+              </form>
+          </div>
+      </div>
+
+
+
+  <!-- <div class = "col-sm-10"> -->
+      <div id="fairytale">
+        
+        <div class="parent">
+
+          <div class="product">
+            <div class="product_image">
+              <img src="images/tm1.webp" alt="product1" />
+            </div>
+            <div class="description">
+              <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal1"><h2 class = "book-title">Charlotte's Web</h2></a>
+              <p> Paperback
+              </p>
+              <p>$<span class="product-price">12.59</span></p>
+              <!-- <p><strong class = "product-price"> $12.59</strong></p> -->
+              <!-- <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal1">Know More</button> -->
+              <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+
+          <!--Modal-->
+          
+          <div class="modal fade" id="myModal1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+          
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Charlotte's Web</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+          
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <p>The novel follows Wilbur, the pig who, when he’s born, is the smallest of his litter. The farmer’s daughter, Fern, saves him and takes care of him until he’s too old to live with the family, and her parents become concerned that she’s spending too much time with animals and not enough time with her peers. He moves into a new home on a new farm and eventually learns a startling fate.</p>
+
+                  <p>He won’t be allowed to live out his days in peace, instead, he and the other farm animals need to find a way to prevent the Zuckerman family from slaughtering Wilbur at Christmas. They come up with a creative solution that changes the way the farmers see their animals. </p>
+
+                  <p>The novel is well-loved for its depiction of friendship, love, and the importance of helping those in need. Today, it’s read by children and adults around the world and has been the source of inspiration for television shows and films. </p>
+                </div>
+          
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+          
+              </div>
+            </div>
+          </div>
+          
+          <div class="product">
+            <div class="product_image">
+              <img src="images/fairytale/ft1.jpg" alt="product2" />
+            </div>
+            <div class="description">
+              <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal2"><h2 class = "book-title">The Wishing Spell</h2></a>
+              <p> Paperback
+              </p>
+              <p>$<span class="product-price">11.99</span></p>
+              <!-- <p><strong> $11.99</strong></p> -->
+              
+              <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+
+          <!--Modal-->
+          
+          <div class="modal fade" id="myModal2">
+            <div class="modal-dialog">
+              <div class="modal-content">
+          
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">The Wishing Spell</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+          
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                 <p> <strong> The first book in Chris Colfer’s #1 New York Times bestselling series The Land of Stories about two siblings who fall into a fairy-tale world! </strong> </p>
+                  <p>Alex and Conner Bailey’s world is about to change, in this fast-paced adventure that uniquely combines our modern day world with the enchanting realm of classic fairy tales.</p>
+
+                  <p>The Land of Stories tells the tale of twins Alex and Conner. Through the mysterious powers of a cherished book of stories, they leave their world behind and find themselves in a foreign land full of wonder and magic where they come face-to-face with fairy tale characters they grew up reading about. </p>
+
+                  <p>But after a series of encounters with witches, wolves, goblins, and trolls alike, getting back home is going to be harder than they thought. </p>
+                </div>
+          
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+          
+              </div>
+            </div>
+          </div>
+
+
+          <div class="product">
+            <div class="product_image">
+              <img src="images/fairytale/ft2.jpg" alt="product3" />
+            </div>
+            <div class="description">
+              <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal3"><h2 class = "book-title">Shadow and Bone</h2></a>
+              <p> Paperback
+              </p>
+              <p>$<span class="product-price">8.79</span></p>
+              <!-- <p><strong> $8.79</strong></p> -->
+              
+              <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+
+          <!--Modal-->
+          
+          <div class="modal fade" id="myModal3">
+            <div class="modal-dialog">
+              <div class="modal-content">
+          
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Shadow and Bone</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+          
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <p><strong> Discover the adventure that started it all and meet Alina, Mal, and the Darkling in Shadow and Bone from #1 bestselling author, Leigh Bardugo. </strong> </p>
+                  <p>Soldier. Summoner. Saint. Orphaned and expendable, Alina Starkov is a soldier who knows she may not survive her first trek across the Shadow Fold–a swath of unnatural darkness crawling with monsters. But when her regiment is attacked, Alina unleashes dormant magic not even she knew she possessed.</p>
+
+                  <p>Now Alina will enter a lavish world of royalty and intrigue as she trains with the Grisha, her country’s magical military elite–and falls under the spell of their notorious leader, the Darkling. He believes Alina can summon a force capable of destroying the Shadow Fold and reuniting their war-ravaged country, but only if she can master her untamed gift. </p>
+
+                  <p>As the threat to the kingdom mounts and Alina unlocks the secrets of her past, she will make a dangerous discovery that could threaten all she loves and the very future of a nation.. </p>
+                </div>
+          
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+          
+              </div>
+            </div>
+          </div>
+
+
+          <div class="product">
+            <div class="product_image">
+              <img src="images/fairytale/ft3.jpg" alt="product4" />
+            </div>
+            <div class="description">
+              <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal4"><h2 class = "book-title">Cinder: Lunar Chronicles</h2></a>
+              <p> Paperback
+              </p>
+              <p>$<span class="product-price">9.59</span></p>
+              <!-- <p><strong> $9.59</strong></p> -->
+              
+              <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+
+          <!--Modal-->
+          
+          <div class="modal fade" id="myModal4">
+            <div class="modal-dialog">
+              <div class="modal-content">
+          
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Cinder: Lunar Chronicles</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+          
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <p><strong>“An interesting mash up of fairy tales and science fiction . . . a cross between Cinderella, Terminator, and Star Wars.” —Entertainment Weekly </strong></p>
+                  <p>Humans and androids crowd the raucous streets of New Beijing. A deadly plague ravages the population. From space, a ruthless lunar people watch, waiting to make their move. No one knows that Earth’s fate hinges on one girl. . . .</p>
+
+                  <p>Cinder, a gifted mechanic, is a cyborg. She’s a second-class citizen with a mysterious past, reviled by her stepmother and blamed for her stepsister’s illness. But when her life becomes intertwined with the handsome Prince Kai’s, she suddenly finds herself at the center of an intergalactic struggle, and a forbidden attraction. Caught between duty and freedom, loyalty and betrayal, she must uncover secrets about her past in order to protect her world’s future.</p>
+
+                  <p>With high-stakes action and a smart, resourceful heroine, Cinder is a Cinderella retelling that is at once classic and strikingly original. </p>
+                </div>
+          
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+          
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="product">
+            <div class="product_image">
+              <img src="images/fairytale/ft4.jpg" alt="product5" />
+            </div>
+            <div class="description">
+              <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal5"><h2 class = "book-title">Kill the Beast</h2></a>
+              <p> Hardcover
+              </p>
+              <p>$<span class="product-price">15.19</span></p>
+              <!-- <p><strong> $15.19</strong></p> -->
+              
+              <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+
+          <!--Modal-->
+          
+          <div class="modal fade" id="myModal5">
+            <div class="modal-dialog">
+              <div class="modal-content">
+          
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Kill the Beast</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+          
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <p><strong>He knew he was the best. He knew he was everyone’s favorite guy. </strong></p>
+                  <p>You may think this tale as old as time has been told before.
+                    You may know about the Beauty, and the Beast, and the curse they broke together. But some stories have more than one ending. Some stories have more than one villain.</p>
+
+                  <p>Such is the story of Gaston. Growing up, young Gaston and the prince were brothers in all but blood. Their boyhood adventures led them throughout the many rooms of the castle, and into the deep woods beyond. The woods that were home to the legendary Beast of G?vaudan, a terrifying creature whose presence loomed larger than life in their imaginations.</p>
+
+                  <p>Then one fateful night, a violent tragedy changed their lives–and their friendship–forever, setting each of them down a very different path: the first, of greed and entitlement, the second, of determination to right the wrongs of the past.</p>
+                </div>
+          
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+          
+              </div>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="product_image">
+              <img src="images/fairytale/ft5.jpg" alt="product6" />
+              
+            </div>
+            <div class="description">
+              <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal6"><h2 class = "book-title">Disney Frozen</h2></a>
+              <p> Hardcover
+              </p>
+              <p>$<span class="product-price">4.79</span></p>
+              <!-- <p><strong> $4.79</strong></p> -->
+             
+              <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+
+          <!--Modal-->
+          
+          <div class="modal fade" id="myModal6">
+            <div class="modal-dialog">
+              <div class="modal-content">
+          
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Disney Frozen</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+          
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <p><strong>Walt Disney Animation Studios presents Frozen, a stunning big-screen comedy adventure.</strong></p>
+                  <p>Fearless optimist Anna sets off on an epic journey–teaming up with rugged mountain man Kristoff and his loyal reindeer Sven–to find her sister Elsa, whose icy powers have trapped the kingdom of Arendelle in eternal winter. Encountering Everest-like conditions, mystical trolls and a hilarious snowman named Olaf, Anna, and Kristoff battle the elements in a race to save the kingdom. Children ages 2-5 will enjoy this Little Golden Book retelling the whole exciting story.</p>
+
+                  
+                </div>
+          
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+          
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="product">
+            <div class="product_image">
+              <img src="images/fairytale/ft6.jpg" alt="product7" />
+              
+            </div>
+            <div class="description">
+              <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal7"><h2 class = "book-title">Where the Dark stands still</h2></a>
+              <p> Hardcover
+              </p>
+              <p>$<span class="product-price">15.99</span></p>
+              <!-- <p><strong> $15.99</strong></p> -->
+              
+              <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+
+          <!--Modal-->
+          
+          <div class="modal fade" id="myModal7">
+            <div class="modal-dialog">
+              <div class="modal-content">
+          
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Where the Dark stands still</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+          
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <p><strong>A girl with dangerous magic makes a risky bargain with a demon to be free of her monstrous power in this “dark, devastating, and gothic” (Kirkus Reviews) young adult fantasy perfect for fans of An Enchantment of Ravens and House of Salt and Sorrows. </strong></p>
+                  <p>Liska knows that magic is monstrous, and its practitioners are monsters. She has done everything possible to suppress her own magic, to disastrous consequences. Desperate to be free of it, Liska flees her small village and delves into the dangerous, demon-inhabited spirit-wood to steal a mythical fern flower. If she plucks it, she can use its one wish to banish her powers. Everyone who has sought the fern flower has fallen prey to unknown horrors, so when Liska is caught by the demon warden of the wood–called The Leszy–a bargain seems better than death: one year of servitude in exchange for the fern flower and its wish.</p>
+
+                  <p>Whisked away to The Leszy’s crumbling manor, Liska soon makes an unsettling discovery: she is not the first person to strike this bargain, and all her predecessors have mysteriously vanished. If Liska wants to survive the year and return home, she must unravel her taciturn host’s spool of secrets and face the ghosts–figurative and literal–of his past. Because something wakes in the woods, something deadly and without mercy. It frightens even The Leszy…and cannot be defeated unless Liska embraces the monster she’s always feared becoming.</p>
+
+                  
+                </div>
+          
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+          
+              </div>
+            </div>
+          </div>  
+
+
+
+          <div class="product">
+            <div class="product_image">
+              <img src="images/fairytale/ft7.jpg" alt="product8" />
+              
+            </div>
+            <div class="description">
+              <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal8"><h2 class = "book-title">Little Witch Hazel</h2></a>
+              <p> Hardcover
+              </p>
+              <p>$<span class="product-price">15.99</span></p>
+              <!-- <p><strong> $15.99</strong></p> -->
+              
+              <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+
+          <!--Modal-->
+          
+          <div class="modal fade" id="myModal8">
+            <div class="modal-dialog">
+              <div class="modal-content">
+          
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Little Witch Hazel: A Year in the Forest</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+          
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <p><strong>An earthy and beautiful collection of four stories that celebrate the seasons, nature, and life, from award-winning author-illustrator Phoebe Wahl. </strong></p>
+                  <p>Little Witch Hazel is a tiny witch who lives in the forest, helping creatures big and small. She’s a midwife, an intrepid explorer, a hard worker and a kind friend.</p>
+
+                  <p>In this four-season volume, Little Witch Hazel rescues an orphaned egg, goes sailing on a raft, solves the mystery of a haunted stump and makes house calls to fellow forest dwellers. But when Little Witch Hazel needs help herself, will she get it in time?</p>
+
+                  <p>Little Witch Hazel is a beautiful ode to nature, friendship, wild things and the seasons that only Phoebe Wahl could create: an instant classic and a book that readers will pore over time and time again.</p>
+
+                  
+                </div>
+          
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+          
+              </div>
+            </div>
+          </div>  
+          
+
+          <div class="product">
+            <div class="product_image">
+              <img src="images/fairytale/ft8.jpg" alt="product9" />
+              
+            </div>
+            <div class="description">
+              <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal9"><h2 class = "book-title">Where the Mountain Meets the Moon</h2></a>
+              <p> Paperback
+              </p>
+              <p>$<span class="product-price">10.39</span></p>
+              <!-- <p><strong> $10.39</strong></p> -->
+              
+              <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+
+          <!--Modal-->
+          
+          <div class="modal fade" id="myModal9">
+            <div class="modal-dialog">
+              <div class="modal-content">
+          
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Where the Mountain Meets the Moon</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+          
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <p><strong>This stunning fantasy inspired by Chinese folklore is a companion novel to Starry River of the Sky and the New York Times bestselling and National Book Award finalist When the Sea Turned to Silver </strong></p>
+                  <p>In the valley of Fruitless mountain, a young girl named Minli lives in a ramshackle hut with her parents. In the evenings, her father regales her with old folktales of the Jade Dragon and the Old Man on the Moon, who knows the answers to all of life’s questions. Inspired by these stories, Minli sets off on an extraordinary journey to find the Old Man on the Moon to ask him how she can change her family’s fortune. She encounters an assorted cast of characters and magical creatures along the way, including a dragon who accompanies her on her quest for the ultimate answer.</p>
+
+                  <p>Grace Lin, author of the beloved Year of the Dog and Year of the Rat returns with a wondrous story of adventure, faith, and friendship. A fantasy crossed with Chinese folklore, Where the Mountain Meets the Moon is a timeless story reminiscent of The Wizard of Oz and Kelly Barnhill’s The Girl Who Drank the Moon. Her beautiful illustrations, printed in full-color, accompany the text throughout. Once again, she has created a charming, engaging book for young readers.</p>
+
+                                    
+                </div>
+          
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+          
+              </div>
+            </div>
+          </div>  
+          
+       
+          <div class="product">
+            <div class="product_image">
+              <img src="images/fairytale/ft9.jpg" alt="product10" />
+              
+            </div>
+            <div class="description">
+              <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal10"><h2 class = "book-title">Beanie the Bansheenie</h2></a>
+              <p> Hardcover
+              </p>
+              <p>$<span class="product-price">14.39</span></p>
+              <!-- <p><strong> $14.39</strong></p> -->
+              
+              <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+
+          <!--Modal-->
+          
+          <div class="modal fade" id="myModal10">
+            <div class="modal-dialog">
+              <div class="modal-content">
+          
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Beanie the Bansheenie</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+          
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <p><strong>A best-selling author and an award-winning illustrator join forces in a long-form picture book that turns a familiar myth of Irish folklore into a universal story of love, perseverance, and friendship against all odds. </strong></p>
+                  <p>Banshees are well known to most of us as supernatural Irish harbingers of doom. But not many know that they grow on the prickly gorse bush inside little pods, and that the sole job of a baby banshee, or “bansheenie,” is to bond with a human and know all there is to know about that person, including when they’re destined to breathe their last breath. One bansheenie named Beanie, however, is no ordinary herald of death. </p>
+
+                  <p>When she sees her person, a little girl named Rose, she decides to change both their fates–and instead of delivering bad news, protect Rose and her family. And when her banshee’s howl won’t work, she must draw power and strength from the ancient secrets and hidden networks of the natural world to create a new sound, a new way of being in the world, that will change everything. Melding Eoin Colfer’s welcoming voice and Steve McCarthy’s striking Celtic imagery, Beanie the Bansheenie is a gloriously immersive, detailed, and emotional storytelling experience.</p>
+
+                                    
+                </div>
+          
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+          
+              </div>
+            </div>
+          </div>  
+
+
+          <div class="product">
+            <div class="product_image">
+              <img src="images/fairytale/ft10.jpg" alt="product11" />
+              
+            </div>
+            <div class="description">
+              <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal11"><h2 class = "book-title">What Once Was Mine-A Twisted Tale</h2></a>
+              <p> Hardcover
+              </p>
+              <p>$<span class="product-price">15.19</span></p>
+              <!-- <p><strong> $15.19</strong></p> -->
+              
+              <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+
+          <!--Modal-->
+          
+          <div class="modal fade" id="myModal11">
+            <div class="modal-dialog">
+              <div class="modal-content">
+          
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">What Once Was Mine-A Twisted Tale</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+          
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <p><strong>The 12th installment in the New York Times best-selling series asks: What if Rapunzel’s mother drank a potion from the wrong flower?</strong></p>
+                  <p>Desperate to save the life of their queen and her unborn child, the good citizens of the kingdom comb the land for the all-healing Sundrop flower to cure her . . . but someone mistakenly picks the blossom of the Moondrop instead. This shimmering flower heals the queen and she delivers a healthy baby girl–with hair as silver and gray as the moon. </p>
+
+                  <p>But with her mysterious hair comes dangerous magical powers: the power to hurt, not heal. For the safety of the kingdom, Rapunzel is locked away in a tower and put under the care of the powerful goodwife, Mother Gothel.</p>
+
+                  <p>For eighteen years Rapunzel stays imprisoned in her tower, knowing she must protect everyone from her magical hair. When she finally decides to leave the only home she’s ever known–to see the floating lights that appear on her birthday–she gets caught up in an unexpected adventure with two thieves: a would-be outlaw named Gina, and Flynn Rider, a rogue on the run. </p>
+
+                                    
+                </div>
+          
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+          
+              </div>
+            </div>
+          </div>  
+
+
+
+          <div class="product">
+            <div class="product_image">
+              <img src="images/fairytale/ft11.jpg" alt="product12" />
+              
+            </div>
+            <div class="description">
+              <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal12"><h2 class = "book-title">Ruin and Rising</h2></a>
+              <p> Paperback
+              </p>
+              <p>$<span class="product-price">8.79</span></p>
+              <!-- <p><strong> $8.79</strong></p> -->
+              
+              <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+
+          <!--Modal-->
+          
+          <div class="modal fade" id="myModal12">
+            <div class="modal-dialog">
+              <div class="modal-content">
+          
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Ruin and Rising</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+          
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <p><strong>Enter the Grishaverse with Book Three of the Shadow and Bone Trilogy by the #1 New York Times-bestselling author of Six of Crows and Crooked Kingdom.</strong></p>
+                  <p>The Darkling rules from his shadow throne while a weakened Alina Starkov recovers from their battle under the dubious protection of the zealots who worship her as a Saint. Now her hopes lie with the magic of a long-vanished ancient creature and the chance that an outlaw prince still survives. </p>
+
+                  <p>As her allies and enemies race toward war, only Alina stands between her country and a rising tide of darkness that could destroy the world. To win this fight, she must seize a legend’s power–but claiming the firebird may be her ruin.</p>
+
+                  
+
+                                    
+                </div>
+          
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+          
+              </div>
+            </div>
+          </div>  
+
+
+          <div class="product">
+            <div class="product_image">
+              <img src="images/fairytale/ft12.jpg" alt="product13" />
+              
+            </div>
+            <div class="description">
+              <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal13"><h2 class = "book-title">
+                The Enchantress Returns</h2></a>
+              <p> Paperback
+              </p>
+              <p>$<span class="product-price">7.99</span></p>
+              <!-- <p><strong> $7.99</strong></p> -->
+              
+              <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+
+          <!--Modal-->
+          
+          <div class="modal fade" id="myModal13">
+            <div class="modal-dialog">
+              <div class="modal-content">
+          
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">
+                    The Enchantress Returns</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+          
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <p><strong>After decades of hiding, the evil Enchantress who cursed Sleeping Beauty is back with a vengeance.</strong></p>
+                  <p>Alex and Conner Bailey have not been back to the magical Land of Stories since their adventures in The Wishing Spell ended. But one night, they learn the famed Enchantress has kidnapped their mother! Against the will of their grandmother, the twins must find their own way into the Land of Stories to rescue their mother and save the fairy tale world from the greatest threat it’s ever faced. </p>
+
+                  
+
+                                    
+                </div>
+          
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+          
+              </div>
+            </div>
+          </div>  
+
+
+          <div class="product">
+            <div class="product_image">
+              <img src="images/fairytale/ft13.jpg" alt="product14" />
+              
+            </div>
+            <div class="description">
+              <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal14"><h2 class = "book-title">A Tale of Sorcery…</h2></a>
+              <p> Hardcover
+              </p>
+              <p>$<span class="product-price">15.19</span></p>
+              <!-- <p><strong> $15.19</strong></p> -->
+              
+              <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+
+          <!--Modal-->
+          
+          <div class="modal fade" id="myModal14">
+            <div class="modal-dialog">
+              <div class="modal-content">
+          
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">A Tale of Sorcery…</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+          
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <p><strong>As the doors were pushed, flames and magma spewed out from between the cracks, offering glimpses into the world of fire and chaos beyond them.</strong></p>
+                  <p>Brystal Evergreen is running out of time. It has been almost one year since she made a deal with Death to find and destroy the Immortal in exchange for her life. But she still hasn’t found a single clue about who or where the Immortal is. To make matters worse, something dark and malignant has risen from deep within the earth, threatening life as we know it. </p>
+
+                  <p>To stop this new evil, the fairies and witches must work with all the kingdoms and territories, including the Righteous Brotherhood and their Army of the Dead. But is the threat more familiar than they expected? And why is a secretive group of Sorcerers convinced that Xanthous Hayfield is connected to it?</p>
+
+                  <p>Sorcery, magic, and science collide in this thrilling third book in the Tale of Magic… series that will keep readers on the edge of their seats. </p>
+
+                                    
+                </div>
+          
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+          
+              </div>
+            </div>
+          </div>  
+
+
+          <div class="product">
+            <div class="product_image">
+              <img src="images/fairytale/ft14.jpg" alt="product15" />
+              
+            </div>
+            <div class="description">
+              <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal15"><h2 class = "book-title">The Princess Rules</h2></a>
+              <p> Paperback
+              </p>
+              <p>$<span class="product-price">5.59</span></p>
+              <!-- <p><strong> $5.59</strong></p> -->
+              
+              <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+
+          <!--Modal-->
+          
+          <div class="modal fade" id="myModal15">
+            <div class="modal-dialog">
+              <div class="modal-content">
+          
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">The Princess Rules</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+          
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <p><strong>Princess Florizella may live in a classic fairy-tale world, but she’s no ordinary princess…</strong></p>
+                  <p>These three stories were originally published under the titles Princess Florizella, Princess Florizella and the Wolves and Princess Florizella and the Giant.</p>
+
+                  <p>They were originally dedicated to her daughter but have been reimagined in this edition which she has dedicated to her grandchildren.</p>
+
+                  <p>“Princess Florizella was friends with some of the princesses who had studied the Princess Rules, and behaved just as the Rules said they should. Florizella thought their hair was lovely: so golden and so very long. And their clothes were nice: so richly embroidered. And their shoes were delightful: so tiny and handmade in silk. But their days bored her to death…” </p>
+
+                                    
+                </div>
+          
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+          
+              </div>
+            </div>
+          </div>  
+
+
+          <div class="product">
+            <div class="product_image">
+              <img src="images/fairytale/ft15.jpg" alt="product16" />
+              
+            </div>
+            <div class="description">
+              <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal16"><h2 class = "book-title">Liar, Liar</h2></a>
+              <p> Hardcover
+              </p>
+              <p>$<span class="product-price">13.59</span></p>
+              <!-- <p><strong> $13.59</strong></p> -->
+              
+              <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+
+          <!--Modal-->
+          
+          <div class="modal fade" id="myModal16">
+            <div class="modal-dialog">
+              <div class="modal-content">
+          
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Liar, Liar</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+          
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <p><strong>Here is the sixteenth magical installment of the New York Times and USA Today bestselling series of fractured fairy tales for fearless kids!</strong></p>
+                  <p>My little brother Jonah and I have a magic mirror in our basement. This time, the mirror sucks us up and drops us into the story of Pinocchio. Our task? To help Gepetto get his wooden puppet son, Pinocchio, to go to school. But even though his nose grows when he lies, Pinocchio is tricky — and he ends up sneaking back into OUR world with us! </p>
+
+                  
+
+                                    
+                </div>
+          
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+          
+              </div>
+            </div>
+          </div>  
+
+
+          <div class="product">
+            <div class="product_image">
+              <img src="images/fairytale/ft16.jpg" alt="product17" />
+              
+            </div>
+            <div class="description">
+              <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal17"><h2 class = "book-title">Aloha Everything</h2></a>
+              <p> Hardcover
+              </p>
+              <p>$<span class="product-price">15.99</span></p>
+              <!-- <p><strong> $15.99</strong></p> -->
+              
+              <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+
+          <!--Modal-->
+          
+          <div class="modal fade" id="myModal17">
+            <div class="modal-dialog">
+              <div class="modal-content">
+          
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Aloha Everything</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+          
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <p><strong>Aloha Everything, is a magical story that will take you on a thrilling journey through the breathtaking islands of Hawaiʻi!</strong></p>
+                  <p>In this exciting adventure, you’ll encounter mighty canoes crashing over ocean waves, regal hawks soaring high above the clouds, and brilliant lizards jumping nimbly through forest trees! Most importantly, you’ll meet a courageous young girl named Ano who learns, grows, and comes to love her island home with all her heart.</p>
+
+                  <p>Since the day that Ano was born, her heart has been connected to her home. But, this adventurous child has a lot to learn! When Ano begins to dance hula — a storytelling dance form that carries the knowledge, history, and folklore of the Hawaiian people — Ano comes to understand the true meaning of aloha.</p>
+
+                  <p>Aloha Everything is both a captivating read and a fantastic educational resource for learning about Hawaiian history, ecology, and culture. With breathtaking hand-painted illustrations and beautiful rhyming poetry that will lull little ones into brilliant dreams of vibrant adventure, this book is sure to capture the hearts of both children and parents alike. </p>
+
+                                    
+                </div>
+          
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+          
+              </div>
+            </div>
+          </div>  
+
+
+          <div class="product">
+            <div class="product_image">
+              <img src="images/fairytale/ft17.jpg" alt="product18" />
+              
+            </div>
+            <div class="description">
+              <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal18"><h2 class = "book-title">A Study in Drowning</h2></a>
+              <p> Paperback
+              </p>
+              <p>$<span class="product-price">5.59</span></p>
+              <!-- <p><strong> $5.59</strong></p> -->
+              
+              <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+
+          <!--Modal-->
+          
+          <div class="modal fade" id="myModal18">
+            <div class="modal-dialog">
+              <div class="modal-content">
+          
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">A Study in Drowning</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+          
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <p><strong>Bestselling author Ava Reid makes her YA debut in this dark academic fantasy perfect for fans of Melissa Albert and Elana K. Arnold.</strong></p>
+                  <p>Effy Sayre has always believed in fairy tales. Haunted by visions of the Fairy King since childhood, she’s had no choice. Her tattered copy of Angharad–Emrys Myrddin’s epic about a mortal girl who falls in love with the Fairy King, then destroys him–is the only thing keeping her afloat. So when Myrddin’s family announces a contest to redesign the late author’s estate, Effy feels certain it’s her destiny.</p>
+
+                  <p>But musty, decrepit Hiraeth Manor is an impossible task, and its residents are far from welcoming. Including Preston H?loury, a stodgy young literature scholar determined to expose Myrddin as a fraud. As the two rivals piece together clues about Myrddin’s legacy, dark forces, both mortal and magical, conspire against them–and the truth may bring them both to ruin.</p>
+
+                  <p>Part historical fantasy, part rivals-to-lovers romance, part Gothic mystery, and all haunting, dreamlike atmosphere, Ava Reid’s powerful YA debut will lure in readers who loved The Atlas Six, House of Salt and Sorrows, or Girl, Serpent, Thorn. </p>
+
+                                    
+                </div>
+          
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+          
+              </div>
+            </div>
+          </div>  
+
+
+
+       
+        </div> 
+      </div>
+  </div>
+
+
+
+
+
+
+
+    
+
+     
+
+
+
+
+
+    </main>
+<footer style="background-color: #06D6A0; color: white;">
+        <div class = "row">
+        <div class = "col-sm-3">
+        <img src = "images/template/images/Logo2.png" class = "d-inline-block rounded-pill " alt = "Brand Logo" style="width:65px;">
+        <span class = "h4">Little Sprout</span>
+    </div>
+    <img src = "images/template/images/girl2.png" class = "d-inline-block" alt = "Boy with book" style="width:100px;">
+    <div class="col-sm-4 text-center">
+        <h5>Subscribe to Our Newsletter</h5>
+        <form class="d-flex justify-content-center my-3">
+          <input type="email" class="form-control w-50 me-2" placeholder="Enter your email">
+          <button class="btn btn-primary">Subscribe</button>
+        </form>
+        </div>
+        <img src = "images/template/images/boy.png" class = "d-inline-block" alt = "Boy with book" style="width:100px;">
+            <div class = "col-sm-3 text-end">
+                <ul class = "list-unstyled d-flex justify-content-end mb-0">
+                    <li class = "ms-4"> <a href = "about.html"> About Us <a> </li>
+                        <li class = "ms-4"> <a href = "contact.html">Contact Us</a></li>
+                </ul>
+        <!-- <a href = "about.html"> About Us <a> -->
+        </div>
+    </div>
+        <div><small>&copy; 2024 Little Sprout Children's Books. All rights reserved. </small></div>
+    </footer>
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src = "cart_new.js"></script>
+  </body>
+</html>

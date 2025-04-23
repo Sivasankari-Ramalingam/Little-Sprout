@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Qwitcher+Grypen:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="product_style.css" />
+  </head>
+  <body>
+    <header class = "header-bg">
+      <nav class="navbar navbar-expand-sm" style = "background-color: #06D6A0;">
+          <div class = "container-fluid">
+          <a class = "navbar-brand" href = "#">
+            <img src = "images/template/images/Logo2.png" class = "d-inline-block align-text-top rounded-pill " alt = "Brand Logo" style="width:100px;">
+            </a>
+            <img src = "images/template/images/boy3.png" class = "d-inline-block" alt = "Boy with book" style="width:100px;">
+            <div class = "collapse navbar-collapse justify-content-center" id = "navbarNav">
+          <ul class = "navbar-nav">
+            <li class = "nav-item"> <a href="index.html">Home</a></li>
+            <li class = "nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id = "navbarDropdownMenuLink" role = "button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Books</a>
+              <div class="dropdown-menu" style = "background-color: #dc3545;" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="fairytale.html">Fairytale</a>
+                <a class="dropdown-item" href="bedtime.html">Bedtime Stories</a>
+                <a class="dropdown-item" href="novel.html">Novels</a>
+              </div>
+            
+            
+            </li>
+            
+            <li class = "nav-item"><a href="tracking.html">Track Your Order</a></li>
+            <li class = "nav-item"><a href="about.html">About</a></li>
+            <li class = "nav-item"><a href="contact.html">Contact</a><img src = "images/template/images/boy2.png" class = "d-inline-block" alt = "Boy with book" style="width:80px;"></li>
+            <li class = "nav-item"><a href="cart.html">Shopping Cart</a></li>
+          </ul>
+
+          <!-- <img src = "images/template/images/boy2.png" class = "d-inline-block" alt = "Boy with book" style="width:100px;"> -->
+          <!-- <button class="btn btn-primary">Subscribe</button> -->
+          <!-- <a href="#" class="btn btn-outline-primary ms-auto">Login</a> -->
+          <!-- <a href="#" class="ms-auto">Login</a> -->
+      </div>
+  </div>
+    </nav>
+
+  </header>
+  <main>
+
+    <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel" data-interval = "1000">
+
+<!-- Indicators/dots -->
+<div class="carousel-indicators">
+  <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+  <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+  <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+</div>
+
+<!-- The slideshow/carousel -->
+<div class="carousel-inner">
+  <div class="carousel-item active animate__animated animate__fadeInRight">
+    <img src="images/novels/Carousel/img1.jpeg" alt="img1" class="d-block w-100">
+  </div>
+  <div class="carousel-item animate__animated animate__fadeInRight">
+    <img src="images/novels/Carousel/img2.jpeg" alt="img2" class="d-block w-100">
+  </div>
+  <div class="carousel-item animate__animated animate__fadeInRight">
+    <img src="images/novels/Carousel/img3.jpeg" alt="img3" class="d-block w-100">
+  </div>
+  <div class="carousel-item animate__animated animate__fadeInRight">
+    <img src="images/novels/Carousel/img4.jpeg" alt="img4" class="d-block w-100">
+  </div>
+</div>
+
+<!-- Left and right controls/icons -->
+<button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon"></span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+  <span class="carousel-control-next-icon"></span>
+</button>
+</div>
+
+<!--Search button-->
+<div class="container">
+  <div class="row  mx-auto" style = "position:sticky; top:0;">
+      <div class="col-md-12">
+          <form id="searchForm" class="form-inline my-2 my-lg-0">
+            <div class = "form-group">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search for books" aria-label="Search" id="searchInput">
+            </div>
+            <div class = "form-group">
+              <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+            </div>
+              <div class = "form-group float-end">
+              <button class="btn btn-primary my-2 my-sm-0" type="button" id = "back">Back</button>
+            </div>
+          </form>
+      </div>
+  </div>
+
+  
+
+<!-- <div class = "col-sm-10"> -->
+    <div id="fairytale">
+      
+      <div class="parent">
+
+        <div class="product">
+          <div class="product_image">
+            <img src="images/novels/n1.jpg" alt="product1" />
+          </div>
+          <div class="description">
+            <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal1"><h2 class = "book-title">The Precipice A Novel</h2></a>
+            <p> Paperback
+            </p>
+            <p>$<span class="product-price">15.59</span></p>
+            <!-- <p><strong> $15.99</strong></p> -->
+            <!-- <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal1">Know More</button> -->
+            <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+
+        <!--Modal-->
+        
+        <div class="modal fade" id="myModal1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">The Precipice A Novel</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p><strong>The Precipice by Elia W. Peattie is a novel that delves into the complexities of human emotions, social issues, and moral dilemmas through a dramatic and character-driven narrative. </strong></p>
+
+                <p>The novel centers around intense drama and conflict, exploring the emotional and psychological struggles of its characters. At its core, The Precipice examines moral dilemmas and social issues, offering a critical look at the societal norms and cultural challenges that shape the characters’ lives. The story places a strong emphasis on character development, showcasing the evolution and depth of its protagonists. </p>
+
+                <p>Their personal growth and inner conflicts drive the narrative. The novel provides deep psychological insight into the characters’ thoughts and emotions, revealing their internal struggles and motivations.  </p>
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger " data-bs-dismiss="modal">Close</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+        
+        <div class="product">
+          <div class="product_image">
+            <img src="images/novels/n2.jpg" alt="product2" />
+          </div>
+          <div class="description">
+            <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal2"><h2 class = "book-title">Overland A Novel</h2></a>
+            <p> Paperback
+            </p>
+            <p>$<span class="product-price">17.59</span></p>
+            <!-- <p><strong> $17.59</strong></p> -->
+            
+            <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+
+        <!--Modal-->
+        
+        <div class="modal fade" id="myModal2">
+          <div class="modal-dialog">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Overland A Novel</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+
+               <p> <strong> A Novel by John William De Forest is a compelling narrative set against the backdrop of American westward expansion in the 19th century. </strong> </p>
+                <p>The novel explores the adventurous and challenging experiences of settlers as they journey into the American frontier. The story delves into the trials and triumphs of early settlers navigating the rugged and uncharted territories of the West.</p>
+
+                <p>It captures the essence of adventure and exploration, as characters face the harsh realities of frontier life and the conflicts that arise with Native American tribes and among themselves. </p>
+
+                <p>Through its portrayal of the American frontier, the novel examines the complex interactions and cultural encounters between different societies. It reflects on the impact of westward expansion on both settlers and indigenous people providing a nuanced view of this transformative period in American history.  </p>
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+
+
+        <div class="product">
+          <div class="product_image">
+            <img src="images/novels/n3.jpg" alt="product3" />
+          </div>
+          <div class="description">
+            <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal3"><h2 class = "book-title">Odtaa A Novel</h2></a>
+            <p> Paperback
+            </p>
+            <p>$<span class="product-price">16.79</span></p>
+            <!-- <p><strong> $16.79</strong></p> -->
+            
+            <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+
+        <!--Modal-->
+        
+        <div class="modal fade" id="myModal3">
+          <div class="modal-dialog">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Odtaa A Novel</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p><strong> “ODTAA: A Novel” by John Masefield is an adventurous and thrilling narrative set against the exotic and historical backdrop of South America.  </strong> </p>
+                <p>The novel immerses readers in a world of political intrigue and colonialism, highlighting the complexities and impacts of colonial expansion.</p>
+
+                <p>The protagonist finds themselves entangled in a web of political plots and conspiracies, facing numerous challenges and struggles for survival. </p>
+
+                <p>These elements create a gripping tale of rebellion and resistance against oppressive authorities. This setting is crucial to the unfolding drama.  </p>
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+
+
+        <div class="product">
+          <div class="product_image">
+            <img src="images/novels/n4.jpg" alt="product4" />
+          </div>
+          <div class="description">
+            <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal4"><h2 class = "book-title">Orphans the Novel</h2></a>
+            <p> Paperback
+            </p>
+            <p>$<span class="product-price">15.99</span></p>
+            <!-- <p><strong> $15.99</strong></p> -->
+            
+            <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+
+        <!--Modal-->
+        
+        <div class="modal fade" id="myModal4">
+          <div class="modal-dialog">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Orphans the Novel</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p><strong>When thirteen-year-old “orphaned” twins Ariel and Kristina Collins suddenly found themselves homeless, they had to decide their next move.  </strong></p>
+                <p>Their summer jobs as part-time maids at the Moody Moon Hotel were not able to sustain them. They were kidnapped by an unsavoury character who dumped them on the streets to fend for themselves.</p>
+
+                <p>However, living on the streets was not an option for this wily pair, and as fate would have it, they ended up being residents of an infamous orphanage of sorts called The Diamond Square.</p>
+
+                <p>Their frequent bending and breaking of the rules in their new home take the readers on a dizzying adventure that will not soon be forgotten. </p>
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="product">
+          <div class="product_image">
+            <img src="images/novels/n5.jpg" alt="product5" />
+          </div>
+          <div class="description">
+            <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal5"><h2 class = "book-title">Geek Fantasy Novel</h2></a>
+            <p> Hardcover
+            </p>
+            <p>$<span class="product-price">7.99</span></p>
+            <!-- <p><strong> $7.99</strong></p> -->
+            
+            <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+
+        <!--Modal-->
+        
+        <div class="modal fade" id="myModal5">
+          <div class="modal-dialog">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Geek Fantasy Novel</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p><strong>The Geek Shall Inherit the Mirth. </strong></p>
+                <p>Be careful what you wish for. Really.Wishes are bad. Very bad.They can get you trapped in a fantasy world full of killer bunny rabbits, evil aunts, and bothersome bacteria, for example.</p>
+
+                <p>But you already knew that, didn’t you?Ralph, alas, does not. He’s been asked to spend the summer with his strange British relatives at their old manor house in order to set up their Wi-Fi network. But there’s much more to it than that, of course. </p>
+
+                <p>It’s just that nobody told Ralph. He’s a gamer, sure. But this game is much stranger — and funnier — than anything manufactured by Nintendo.So put on your suit of armor. Take out your 20-sided die. Brush up on your warcraft. Or, at the very least, open up this book.Geek fantasy awaits!</p>
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="product_image">
+            <img src="images/novels/n6.jpg" alt="product6" />
+            
+          </div>
+          <div class="description">
+            <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal6"><h2 class = "book-title">Malevolence: A Legacy Novel</h2></a>
+            <p> Hardcover
+            </p>
+            <p>$<span class="product-price">14.35</span></p>
+            <!-- <p><strong> $14.35</strong></p> -->
+           
+            <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+
+        <!--Modal-->
+        
+        <div class="modal fade" id="myModal6">
+          <div class="modal-dialog">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Malevolence: A Legacy Novel</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p><strong>An Immortal entombed in the depths of an ancient bog;</strong></p>
+                <p><i>his soul condemned to spend eternity bound to the essence of a tormented goddess.</i></p>
+
+                <p><i>Consumed by the nightmare of insanity;</i></p>
+                  
+                  <p><i> all that remains is a Goddess’ killing rage.</i></p>
+                  
+                    <p><i>Finally, after two thousand years, evil has been released.</i></p>
+                  
+                      <p><i>  Will the Mortal Realm survive what is to come?</i></p>
+                  
+                        <p><i>After a courageous act unleashes a malevolent evil, Caitlin finds herself alone and hunted.</i></p>
+                  
+                          <p><i>Heir to the Goddess Brighid and guardian of her soul;</i></p>
+                  
+                            <p><i> does she know enough about her legacy to survive?</i></p>
+                  
+                              <p><i> Caitlin refuses to lose anyone else she loves to the cruelty of the Otherworld,</i></p>
+                  
+                                <p><i>  she vows to never love again.</i></p>
+                  
+                                  <p><i> However, fate has other plans.</i></p>
+                  
+                                    <p><i>Michael would give his life for the brave young girl with the secret past.</i></p>
+                  
+                                      <p><i> Will she open her heart and accept his help to escape the malevolence that hunts her?</i></p>
+
+                
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="product">
+          <div class="product_image">
+            <img src="images/novels/n7.jpg" alt="product7" />
+            
+          </div>
+          <div class="description">
+            <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal7"><h2 class = "book-title">Bleeder</h2></a>
+            <p> Hardcover
+            </p>
+            <p>$<span class="product-price">11.99</span></p>
+            <!-- <p><strong> $11.99</strong></p> -->
+            
+            <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+
+        <!--Modal-->
+        
+        <div class="modal fade" id="myModal7">
+          <div class="modal-dialog">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Bleeder</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p><strong>What happens when lightning strikes? </strong></p>
+                <p>Seventeen-year-old Selene Windell doesn’t remember. But ghosts of her accident haunt her – fragments of memories, deep-rooted fears, and a freakish electrical curse she can’t shake.</p>
+
+                <p>Phoebus, a trained soldier from the dimension of Threshold, knows something threatens his homeland. In one flash of light, a girl from the Otherside sees his face, and he has to act – not only to protect the secrecy of his world, but also to protect himself.</p>
+
+                
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>  
+
+
+
+        <div class="product">
+          <div class="product_image">
+            <img src="images/novels/n8.jpg" alt="product8" />
+            
+          </div>
+          <div class="description">
+            <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal8"><h2 class = "book-title">13: A Novel</h2></a>
+            <p> Paperback
+            </p>
+            <p>$<span class="product-price">6.39</span></p>
+            <!-- <p><strong> $6.39</strong></p> -->
+            
+            <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+
+        <!--Modal-->
+        
+        <div class="modal fade" id="myModal8">
+          <div class="modal-dialog">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">13: A Novel</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p><strong>“No one said becoming a man was easy.” </strong></p>
+                <p>Evan didn’t expect relevant life advice from Rabbi Weiner, who looks so old that he must have gone to yeshiva with Moses. But wondering what it means to become a man is the least of Evan’s problems.</p>
+
+                <p>After being uprooted right before his thirteen birthday from New York City to Appleton, Indiana, he’s more focused on using this fresh start to find the right friends to invite to his bar mitzvah.</p>
+
+                <p>Because this is his chance to get in with the popular kids–the cool football players and pretty cheerleaders.</p>
+
+                
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>  
+        
+
+        <div class="product">
+          <div class="product_image">
+            <img src="images/novels/n9.jpg" alt="product9" />
+            
+          </div>
+          <div class="description">
+            <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal9"><h2 class = "book-title">Duplex: A Micropowers Novel</h2></a>
+            <p> Paperback
+            </p>
+            <p>$<span class="product-price">13.59</span></p>
+            <!-- <p><strong> $13.59</strong></p> -->
+            
+            <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+
+        <!--Modal-->
+        
+        <div class="modal fade" id="myModal9">
+          <div class="modal-dialog">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Duplex: A Micropowers Novel</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p><strong>Ryan wakes up to find his contractor dad building walls to turn their big old house into a duplex. </strong></p>
+                <p>The family that moves into the other side includes Bizzy Horvat, the pretty girl he has a crush on at school. Bizzy claims her mother is a witch with the power to curse people with clumsiness or, in Bizzy’s case, astonishing beauty.</p>
+
+                <p>When a bee gets caught in Bizzy’s hair, Ryan acts so quickly and radically to save her from getting stung that he attracts the attention of a group of micropotents–people with micropowers.</p>
+
+                                  
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>  
+        
+     
+        <div class="product">
+          <div class="product_image">
+            <img src="images/novels/n10.jpg" alt="product10" />
+            
+          </div>
+          <div class="description">
+            <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal10"><h2 class = "book-title">Distortion: A Phobos Novel</h2></a>
+            <p> Hardcover
+            </p>
+            <p>$<span class="product-price">14.39</span></p>
+            <!-- <p><strong> $14.39</strong></p> -->
+            
+            <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+
+        <!--Modal-->
+        
+        <div class="modal fade" id="myModal10">
+          <div class="modal-dialog">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Distortion: A Phobos Novel</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p><strong>"Distortion: A Phobos Novel" by Victor Dixen is the second book in the Phobos series. It continues the story of twelve young astronauts who are part of a reality TV show and the first humans to colonize Mars.</strong></p>
+                <p>The plot thickens as they realize they are victims of a cruel plot. The protagonist, Léonor, believed she was on an extraordinary mission, leaving her past behind on Earth, but she soon discovers that her painful memories are inescapable. </p>
+
+                <p>The book delves into themes of hope, secrets, betrayal, survival, and romance, while also exploring the darker side of reality TV and the manipulation by its producers.</p>
+
+                                  
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>  
+
+
+        <div class="product">
+          <div class="product_image">
+            <img src="images/novels/n11.jpg" alt="product11" />
+            
+          </div>
+          <div class="description">
+            <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal11"><h2 class = "book-title">Firstborn: A Novel</h2></a>
+            <p> Hardcover
+            </p>
+            <p>$<span class="product-price">7.19</span></p>
+            <!-- <p><strong> $7.19</strong></p> -->
+            
+            <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+
+        <!--Modal-->
+        
+        <div class="modal fade" id="myModal11">
+          <div class="modal-dialog">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Firstborn: A Novel</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p><strong>Where does a firstborn girl fit in a world dominated by men?</strong></p>
+                <p>When Tiadone was born, her parents had two choices: leave their daughter outside the community to die in the wilds, or raise her as male and force her to suppress all feminine traits. Now, as the first female living as male in her village, Tiadone must prove her father didn’t make a mistake by letting her live. </p>
+
+                <p>As her male initiation approaches, Tiadone knows every eye on the community is on her, and desperately wishes to belong and finally be accepted. But at every step, traditional feminine gifts and traits emerge, and the bird she’s been twined with is seen as a sign of the devil.</p>
+
+                <p>Worse, as Tiadone completes her rites she finds she is drawn to her male best friend in ways that are very much in line with the female gender. </p>
+
+                                  
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>  
+
+
+
+        <div class="product">
+          <div class="product_image">
+            <img src="images/novels/n12.jpg" alt="product12" />
+            
+          </div>
+          <div class="description">
+            <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal12"><h2 class = "book-title">In the Shadow of the Cities</h2></a>
+            <p> Paperback
+            </p>
+            <p>$<span class="product-price">12.76</span></p>
+            <!-- <p><strong> $12.76</strong></p> -->
+            
+            <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+
+        <!--Modal-->
+        
+        <div class="modal fade" id="myModal12">
+          <div class="modal-dialog">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">In the Shadow of the Cities</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p><strong>A dystopian story, In the Shadow of the Cities details Scarlett’s life in the training center before she is pulled unexpectedly into City life.</strong></p>
+                
+                
+
+                                  
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>  
+
+
+        <div class="product">
+          <div class="product_image">
+            <img src="images/novels/n13.jpg" alt="product13" />
+            
+          </div>
+          <div class="description">
+            <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal13"><h2 class = "book-title">
+              The Alcazar: A Cerulean Novel</h2></a>
+            <p> Paperback
+            </p>
+            <p>$<span class="product-price">8.79</span></p>
+            <!-- <p><strong> $8.79</strong></p> -->
+            
+            <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+
+        <!--Modal-->
+        
+        <div class="modal fade" id="myModal13">
+          <div class="modal-dialog">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">
+                  The Alcazar: A Cerulean Novel</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p><strong>Sera has finally recognized the true power of her Cerulean blood.</strong></p>
+                <p>But in order to return home, she’ll need help from Agnes, Leo, and their grandmother–the only person with knowledge about the mysterious island of Braxos, where the Cerulean tether is anchored. Though the journey will be treacherous, Sera will risk anything to see her City again. </p>
+
+                
+
+                                  
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>  
+
+
+        <div class="product">
+          <div class="product_image">
+            <img src="images/novels/n14.jpg" alt="product14" />
+            
+          </div>
+          <div class="description">
+            <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal14"><h2 class = "book-title">Thumbelina</h2></a>
+            <p> Hardcover
+            </p>
+            <p>$<span class="product-price">6.39</span></p>
+            <!-- <p><strong> $6.39</strong></p> -->
+            
+            <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+
+        <!--Modal-->
+        
+        <div class="modal fade" id="myModal14">
+          <div class="modal-dialog">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Thumbelina</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p><strong>After seeking the help of a strange old woman, Gerta is amazed to see a tiny girl emerge from the blooming petals of a magical flower! </strong></p>
+                <p>Gerta has always wanted a child of her own, so she adopts the tiny maiden and names her Thumbelina.  </p>
+
+                <p> While Gerta sleeps, a strange creature creeps forth from the darkness and steals Thumbelina into the night. Lost and alone in a forest, Thumbelina must seek the aid of the forest creatures if she is to ever see Gerta again.</p>
+
+                
+
+                                  
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>  
+
+
+        <div class="product">
+          <div class="product_image">
+            <img src="images/novels/n15.jpg" alt="product15" />
+            
+          </div>
+          <div class="description">
+            <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal15"><h2 class = "book-title">No Power: A Bronxland Novel</h2></a>
+            <p> Paperback
+            </p>
+            <p>$<span class="product-price">9.59</span></p>
+            <!-- <p><strong> $9.59</strong></p> -->
+            
+            <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+
+        <!--Modal-->
+        
+        <div class="modal fade" id="myModal15">
+          <div class="modal-dialog">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">No Power: A Bronxland Novel</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p><strong>A blackout. A bloodthirsty beast. The Bronx.
+
+                  This is not how Tom pictured his 17th birthday…
+                  
+                  His plan was far more bleak.</strong></p>
+                <p>When Manhattanite Tom Walton wakes up from a suicide attempt, he finds himself in a Bronx hospital being attacked by an ancient, savage creature that thrives in the darkness of a summer blackout.</p>
+
+                <p>Tom, the son of a rich and racist New York politician, teams up with his fellow patients – a diverse group of Bronx natives – in an attempt to fight back.</p>
+
+                <p>As Tom falls helplessly in love with Kiki, a badass teenage patient, he gains a deeper understanding of the source of his pain and reconsiders his stance on life. But when Tom’s true identity is revealed to the crew, he must work to unify the group and escape the hospital… or be eaten alive. </p>
+
+                                  
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>  
+
+
+        <div class="product">
+          <div class="product_image">
+            <img src="images/novels/n16.jpg" alt="product16" />
+            
+          </div>
+          <div class="description">
+            <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal16"><h2 class = "book-title">Sting: A Loot Novel</h2></a>
+            <p> Paperback
+            </p>
+            <p>$<span class="product-price">6.39</span></p>
+            <!-- <p><strong> $6.39</strong></p> -->
+            
+            <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+
+        <!--Modal-->
+        
+        <div class="modal fade" id="myModal16">
+          <div class="modal-dialog">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Sting: A Loot Novel</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p><strong>Lock up your jewels! Bestselling author Jude Watson is back with her gang of kid criminal masterminds.</strong></p>
+                <p>Never do a favor for a friend. Twelve-year-old March McQuin forgot rule number one for cat burglars, which is how he and his twin sister, Jules, found themselves dangling upside down twenty feet above a stone floor at three in the morning. </p>
+
+                
+
+                                  
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>  
+
+
+        <div class="product">
+          <div class="product_image">
+            <img src="images/novels/n17.jpg" alt="product17" />
+            
+          </div>
+          <div class="description">
+            <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal17"><h2 class = "book-title">
+              Prodigy: The Graphic Novel</h2></a>
+            <p> Hardcover
+            </p>
+            <p>$<span class="product-price">11.99</span></p>
+            <!-- <p><strong> $11.99</strong></p> -->
+            
+            <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+
+        <!--Modal-->
+        
+        <div class="modal fade" id="myModal17">
+          <div class="modal-dialog">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">
+                  Prodigy: The Graphic Novel</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p><strong>The second book in the best-selling Legend trilogy comes to life in this vibrant graphic novel adaptation.</strong></p>
+                <p>After escaping from the Republic’s stronghold, Day and June are on the run in Vegas when the country learns that their Elector Primo has died and his son has stepped in to take his place. </p>
+
+                <p>They meet up with the rebel stronghold of the Patriots–a large organization straddling the line between the Republic and its warring neighbor, the Colonies–and learn about an assassination plot against the Elector.</p>
+
+                <p>Using threats and blackmail to get what he wants, the Patriots’ leader, Razor, convinces June to let herself be captured by Republic soldiers so she can win over the Elector and feed him a decoy assassination plan.  </p>
+
+                                  
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>  
+
+
+        <div class="product">
+          <div class="product_image">
+            <img src="images/novels/n18.jpg" alt="product18" />
+            
+          </div>
+          <div class="description">
+            <a href="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal18"><h2 class = "book-title">The Breadwinner</h2></a>
+            <p> Paperback
+            </p>
+            <p>$<span class="product-price">11.99</span></p>
+            <!-- <p><strong> $11.99</strong></p> -->
+            
+            <button type="button" class="btn btn-warning add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+
+        <!--Modal-->
+        
+        <div class="modal fade" id="myModal18">
+          <div class="modal-dialog">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">The Breadwinner</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p><strong>Deborah Ellis’s bestselling novel The Breadwinner, now available as a stunningly illustrated graphic novel.</strong></p>
+                <p>This beautiful graphic-novel adaptation of The Breadwinner animated film tells the story of eleven-year-old Parvana, who must disguise herself as a boy to support her family during the Taliban’s rule in Afghanistan in the late 1990s.</p>
+
+                <p>Parvana lives with her family in one room of a bombed-out apartment building in Kabul, Afghanistan’s capital city. Parvana’s father — a history teacher until his school was bombed and his health destroyed — works from a blanket on the ground in the marketplace, reading letters for people who cannot read or write.</p>
+
+                <p>One day, he is arrested for having forbidden books, and the family is left without someone who can earn money or even shop for food. </p>
+
+                                  
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>  
+
+
+
+     
+      </div> 
+    </div>
+</div>
+
+
+
+
+
+
+
+  
+
+   
+
+
+
+
+
+  </main>
+ <footer style="background-color: #06D6A0; color: white;">
+        <div class = "row">
+        <div class = "col-sm-3">
+        <img src = "images/template/images/Logo2.png" class = "d-inline-block rounded-pill " alt = "Brand Logo" style="width:65px;">
+        <span class = "h4">Little Sprout</span>
+    </div>
+    <img src = "images/template/images/girl2.png" class = "d-inline-block" alt = "Boy with book" style="width:100px;">
+    <div class="col-sm-4 text-center">
+        <h5>Subscribe to Our Newsletter</h5>
+        <form class="d-flex justify-content-center my-3">
+          <input type="email" class="form-control w-50 me-2" placeholder="Enter your email">
+          <button class="btn btn-primary">Subscribe</button>
+        </form>
+        </div>
+        <img src = "images/template/images/boy.png" class = "d-inline-block" alt = "Boy with book" style="width:100px;">
+            <div class = "col-sm-3 text-end">
+                <ul class = "list-unstyled d-flex justify-content-end mb-0">
+                    <li class = "ms-4"> <a href = "about.html"> About Us <a> </li>
+                        <li class = "ms-4"> <a href = "contact.html">Contact Us</a></li>
+                </ul>
+        <!-- <a href = "about.html"> About Us <a> -->
+        </div>
+    </div>
+        <div><small>&copy; 2024 Little Sprout Children's Books. All rights reserved. </small></div>
+    </footer>
+
+   
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src = "cart_new.js"></script>
+  </body>
+</html>
